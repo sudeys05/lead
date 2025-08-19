@@ -1,0 +1,258 @@
+.profiles-list-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profiles-header {
+  margin-bottom: 24px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-info {
+  text-align: left;
+}
+
+.profiles-header h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.profiles-header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.add-profile-btn {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+.add-profile-btn:hover {
+  background: linear-gradient(135deg, #2980b9 0%, #21618c 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+.profiles-loading,
+.profiles-error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+}
+
+.profiles-error {
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.no-profiles {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+.no-profiles p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar-initials {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profile-basic-info {
+  flex: 1;
+}
+
+.profile-name {
+  margin: 0 0 5px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.profile-username {
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-badge.admin {
+  background: rgba(231, 76, 60, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.role-badge.officer {
+  background: rgba(46, 204, 113, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-card-body {
+  padding: 20px;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.profile-detail:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.detail-value {
+  color: #6c757d;
+  font-size: 0.9rem;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-badge.inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f1b2b5;
+}
+
+.profile-card-footer {
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.profile-timestamps {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.profile-timestamps small {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    margin-bottom: 16px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header-info {
+    text-align: center;
+  }
+
+  .add-profile-btn {
+    width: 100%;
+  }
+}
